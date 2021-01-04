@@ -13,10 +13,9 @@ jobs:
       uses: jurplel/install-qt-action@v2
       with:
         modules: 'qtcharts qtwebengine'
-    - run: qmake -query QMAKE_MKSPECS
     - name: Create Makefile
       run: 
-        qmake PowerVelo.pro -spec win64_msvc2019_64
+        qmake PowerVelo.pro
     - name: Run MakeFile
       run: make
     - name: upload artifact
