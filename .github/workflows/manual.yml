@@ -15,7 +15,7 @@ jobs:
         modules: 'qtcharts qtwebengine'
     - name: Create Makefile
       run: 
-        qmake PowerVelo.pro
+        qmake PowerVelo.pro -spec win32-msvc
     - name: Run MakeFile
       run: make
     - name: upload artifact
