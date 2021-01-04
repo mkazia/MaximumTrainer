@@ -1,5 +1,6 @@
 name: Windows Compile
-
+on: [workflow_dispatch]
+jobs:
   build_windows:
     runs-on: windows-latest
 
